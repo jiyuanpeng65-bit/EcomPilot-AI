@@ -1,0 +1,8 @@
+{
+  "base_url": "http://localhost:8080",
+  "api_user": "YOUR_READ_ONLY_API_USER",
+  "company": "YOUR_DEMO_COMPANY",
+  "timezone": "Asia/Shanghai",
+  "page_size": 100,
+  "max_pages": 1000
+}

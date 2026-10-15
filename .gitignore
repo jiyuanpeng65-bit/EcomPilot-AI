@@ -1,0 +1,46 @@
+# Local credentials, backups and installer binaries must never be published.
+.env
+.env.*
+!.env.example
+*.local.env
+.private/
+backups/
+installers/
+*.msi
+*.exe
+*.log
+*credentials*
+*secret*
+
+# Official upstream checkout is a dependency cache with its own history.
+/frappe_docker/
+
+# ERP runtime data and database exports.
+sites/
+volumes/
+docker-data/
+db-data/
+redis-data/
+data/
+*.sql
+*.sql.gz
+*.dump
+*.db
+*.sqlite*
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.pem
+*.key
+*.pfx
+*.p12
+*.cookie
+*.cookies
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+
+# WorkBuddy local memory and runtime state may contain private recipients.
+.workbuddy/

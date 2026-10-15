@@ -1,0 +1,29 @@
+{
+  "name": "ecompilot-agent",
+  "version": "1.0.0",
+  "description": "Read-only ERPNext business analysis and explicitly authorized outbound Feishu reports.",
+  "author": {"name": "EcomPilot"},
+  "agents": ["./agents/ecompilot-agent.md"],
+  "skills": ["./skills/erp-business-report"],
+  "expertType": "agent",
+  "agentName": "ecompilot-agent",
+  "displayName": {"en": "EcomPilot AI", "zh": "EcomPilot AI｜跨境电商 ERP 智能经营助手"},
+  "profession": {"en": "ERP Business Analyst", "zh": "跨境电商经营分析助手"},
+  "displayDescription": {
+    "en": "Queries real ERPNext orders and inventory, checks business exceptions, and sends reports through the existing Feishu connection only when authorized.",
+    "zh": "读取真实ERP订单与库存，核查待办及低库存风险，生成中文经营日报，并按明确授权向飞书发送。"
+  },
+  "categoryId": "04-DataAI",
+  "plugin": "ecompilot-agent",
+  "defaultInitPrompt": {"en": "Generate a business brief from all current demo ERP data. Show it only; do not send.", "zh": "读取全部演示数据，生成经营简报，先展示，不发送飞书。"},
+  "tags": [
+    {"en": "ERPNext", "zh": "ERPNext经营数据"},
+    {"en": "Inventory", "zh": "库存预警"},
+    {"en": "Feishu Reports", "zh": "飞书日报"}
+  ],
+  "quickPrompts": [
+    {"en": "Generate a business brief from all current demo ERP data. Show it only; do not send.", "zh": "读取全部演示数据，生成经营简报，先展示，不发送飞书。"},
+    {"en": "Generate today's business report using a low-stock threshold of 20. Do not send.", "zh": "生成今日经营日报，低库存阈值20件，先不发送。"},
+    {"en": "Generate an all-demo report using threshold 60; show it and wait for recipient confirmation before sending.", "zh": "读取全部演示数据，库存预警阈值60件；先展示报告，确认接收人后再发送飞书。"}
+  ]
+}
